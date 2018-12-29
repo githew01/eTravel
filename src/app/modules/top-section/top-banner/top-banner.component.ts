@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-top-banner',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-banner.component.scss']
 })
 export class TopBannerComponent implements OnInit {
+  faPhoneSquare = faPhoneSquare;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
