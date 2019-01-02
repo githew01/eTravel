@@ -1,7 +1,26 @@
 <div class="row top-banner">
-  <div class="col-lg-4 col-md-6 col-sm-12">
+  <!-- desk top logo -->
+  <div class="col-lg-6 d-none d-lg-block d-xl-block">
     <a href="#" target="_top"
       ><img src="assets/images/e-Travel-logo.png" height="100px"
     /></a>
+  </div>
+  <!-- tablet and mobile logo -->
+  <div class="col-md-4 col-8 d-block d-lg-none">
+    <a href="#" target="_top"
+      ><img src="assets/images/e-Travel-logo-small.png" height="80px"
+    /></a>
+  </div>
+  <!-- facebook tablet and up only -->
+  <div class="col-lg-4 col-md-5 d-none d-md-block d-lg-block">
+    <app-facebook></app-facebook>
+  </div>
+  <!-- contact us -->
+  <div class="col-lg-2 col-md-3 col-4">
+    <div class="lang">简体中文</div>
+    <div class="tel">
+      <span><fa-icon [icon]="faPhoneSquare" size="lg"></fa-icon></span>
+      888-885-6999
+    </div>
   </div>
 </div>
