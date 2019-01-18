@@ -3,14 +3,14 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { SharedModule } from "./modules/shared/shared.module";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TopSectionModule } from "./modules/top-section/top-section.module";
 import { LeftSectionModule } from "./modules/left-section/left-section.module";
 import { SearchFormModule } from "./modules/search-form/search-form.module";
 import { CalendarsModule } from "./modules/calendars/calendars.module";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { Config } from "./core/config";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -20,6 +20,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -28,13 +29,12 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     AppRoutingModule,
-    SharedModule,
     TopSectionModule,
     LeftSectionModule,
     SearchFormModule,
     CalendarsModule
   ],
-  providers: [],
+  providers: [Config],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
