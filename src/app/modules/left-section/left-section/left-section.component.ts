@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResponsiveService } from 'src/app/services/responsive.service';
+import from_to from 'src/app/data/from-to.json';
 
 @Component({
   selector: 'app-left-section',
@@ -15,6 +16,7 @@ export class LeftSectionComponent implements OnInit {
   ngOnInit() {
     this.onResize();
     this.responsiveService.checkWidth();
+    console.log(from_to);
   }
 
   onResize() {
