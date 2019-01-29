@@ -1,20 +1,18 @@
-import { Component, OnInit } from "@angular/core";
-import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
-import { TranslateService } from "@ngx-translate/core";
-import { Config } from "src/app/core/config";
+import { Component, OnInit } from '@angular/core';
+import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
+import { TranslateService } from '@ngx-translate/core';
+import { Config } from 'src/app/core/config';
 
 @Component({
-  selector: "app-top-banner",
-  templateUrl: "./top-banner.component.html",
-  styleUrls: ["./top-banner.component.scss"]
+  selector: 'app-top-banner',
+  templateUrl: './top-banner.component.html',
+  styleUrls: ['./top-banner.component.scss']
 })
 export class TopBannerComponent implements OnInit {
   faPhoneSquare = faPhoneSquare;
-  translate: TranslateService;
   langs = {};
 
-  constructor(translate: TranslateService, config: Config) {
-    this.translate = translate;
+  constructor(private translate: TranslateService, config: Config) {
     // switch the value
     this.langs[config.zh_HANT] = config.zh_HANS;
     this.langs[config.zh_HANS] = config.zh_HANT;
