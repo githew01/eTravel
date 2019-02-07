@@ -10,6 +10,8 @@ import { ResponsiveService } from './services/responsive.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  screenWidth: number;
+
   constructor(
     private translate: TranslateService,
     config: Config,
@@ -24,6 +26,13 @@ export class AppComponent implements OnInit {
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.setTitile();
     });
+
+    // set screenWidth on page load
+    this.screenWidth = window.innerWidth;
+    window.onresize = () => {
+      // set screenWidth on screen size change
+      this.screenWidth = window.innerWidth;
+    };
   }
 
   setTitile() {
