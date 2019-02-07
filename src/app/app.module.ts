@@ -6,11 +6,10 @@ import { AppComponent } from './app.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TopSectionModule } from './modules/top-section/top-section.module';
 import { LeftSectionModule } from './modules/left-section/left-section.module';
-import { SearchFormModule } from './modules/search-form/search-form.module';
-import { CalendarsModule } from './modules/calendars/calendars.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Config } from './core/config';
+import { CenterSectionModule } from './modules/center-section/center-section.module';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -31,8 +30,7 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     TopSectionModule,
     LeftSectionModule,
-    SearchFormModule,
-    CalendarsModule
+    CenterSectionModule
   ],
   providers: [Config],
   bootstrap: [AppComponent]
