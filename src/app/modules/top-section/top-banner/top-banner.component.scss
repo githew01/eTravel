@@ -7,12 +7,13 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  padding: 0 16px;
 }
 
 @include media-breakpoint-up(xs) {
   .top-banner {
-    background-size: 100% 90px;
+    background-size: 100% 80px;
+    padding: 0 8px;
+    height: 80px;
   }
   div.tel {
     font-size: 10px;
@@ -23,6 +24,8 @@
 @include media-breakpoint-up(md) {
   .top-banner {
     background-size: 100% 90px;
+    padding: 0 16px;
+    height: 90px;
   }
   div.tel {
     font-size: 16px;
@@ -33,6 +36,8 @@
 @include media-breakpoint-up(lg) {
   .top-banner {
     background-size: 100% 100px;
+    padding: 0 16px;
+    height: 100px;
   }
   div.tel {
     font-size: 20px;
