@@ -1,48 +1,60 @@
-{
-  "US": [
-    "los-angeles-to-shanghai",
-    "los-angeles-to-beijing",
-    "los-angeles-to-chengdu",
-    "los-angeles-to-qingdao",
-    "los-angeles-to-hangzhou",
-    "new-york-to-beijing",
-    "new-york-to-shanghai",
-    "new-york-to-guangzhou",
-    "new-york-to-fuzhou",
-    "new-york-to-chengdu",
-    "san-francisco-to-beijing",
-    "san-francisco-to-shanghai",
-    "san-francisco-to-guangzhou",
-    "san-francisco-to-qingdao",
-    "san-francisco-to-wuhan",
-    "chicago-to-beijing",
-    "chicago-to-shanghai",
-    "chicago-to-hong-kong",
-    "boston-to-beijing",
-    "boston-to-shanghai",
-    "houston-to-shanghai",
-    "houston-to-beijing"
-  ],
-  "Canada": [
-    "toronto-to-shanghai",
-    "toronto-to-beijing",
-    "toronto-to-guangzhou",
-    "toronto-to-chongqing",
-    "vancouver-to-shanghai",
-    "vancouver-to-beijing",
-    "vancouver-to-shenyang",
-    "vancouver-to-guangzhou",
-    "montreal-to-shanghai",
-    "montreal-to-beijing",
-    "calgary-to-shanghai",
-    "calgary-to-beijing",
-    "ottawa-to-beijing",
-    "winnipeg-to-shanghai"
-  ],
-  "China": [
-    "beijing-to-los-angeles",
-    "beijing-to-new-york",
-    "shanghai-to-los-angeles",
-    "shanghai-to-new-york"
-  ]
-}
+[
+  {
+    "country": "From_US",
+    "order": 1,
+    "from_to": [
+      "los-angeles-to-shanghai",
+      "los-angeles-to-beijing",
+      "los-angeles-to-chengdu",
+      "los-angeles-to-qingdao",
+      "los-angeles-to-hangzhou",
+      "new-york-to-beijing",
+      "new-york-to-shanghai",
+      "new-york-to-guangzhou",
+      "new-york-to-fuzhou",
+      "new-york-to-chengdu",
+      "san-francisco-to-beijing",
+      "san-francisco-to-shanghai",
+      "san-francisco-to-guangzhou",
+      "san-francisco-to-qingdao",
+      "san-francisco-to-wuhan",
+      "chicago-to-beijing",
+      "chicago-to-shanghai",
+      "chicago-to-hong-kong",
+      "boston-to-beijing",
+      "boston-to-shanghai",
+      "houston-to-shanghai",
+      "houston-to-beijing"
+    ]
+  },
+  {
+    "country": "From_Canada",
+    "order": 2,
+    "from_to": [
+      "toronto-to-shanghai",
+      "toronto-to-beijing",
+      "toronto-to-guangzhou",
+      "toronto-to-chongqing",
+      "vancouver-to-shanghai",
+      "vancouver-to-beijing",
+      "vancouver-to-shenyang",
+      "vancouver-to-guangzhou",
+      "montreal-to-shanghai",
+      "montreal-to-beijing",
+      "calgary-to-shanghai",
+      "calgary-to-beijing",
+      "ottawa-to-beijing",
+      "winnipeg-to-shanghai"
+    ]
+  },
+  {
+    "country": "From_China",
+    "postion": 3,
+    "from_to": [
+      "beijing-to-los-angeles",
+      "beijing-to-new-york",
+      "shanghai-to-los-angeles",
+      "shanghai-to-new-york"
+    ]
+  }
+]

@@ -11,14 +11,23 @@
 
 <mat-drawer-container class="nav-container">
   <mat-drawer #sidenav [opened]="!isMobile" [mode]="isMobile ? 'over' : 'side'">
-    <mat-nav-list>
-      <a
-        mat-list-item
-        routerLink="."
-        *ngFor="let item of (fromTo | keyvalue)"
-        >{{ item.key }}</a
-      >
-    </mat-nav-list>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let item of (fromTo | orderBy: 'order')">
+        <mat-expansion-panel-header
+          [collapsedHeight]="'3rem'"
+          [expandedHeight]="'3rem'"
+        >
+          <mat-panel-title>
+            {{ item.country | translate }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-nav-list>
+          <a mat-list-item href="#" *ngFor="let fromTo of item.from_to">
+            {{ fromTo | translate }}
+          </a>
+        </mat-nav-list>
+      </mat-expansion-panel>
+    </mat-accordion>
   </mat-drawer>
 
   <mat-drawer-content>
