@@ -6,6 +6,7 @@ import { MaterialModule } from '../shared/material.module';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserModule } from '@angular/platform-browser';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [LeftSectionComponent],
@@ -15,7 +16,8 @@ import { BrowserModule } from '@angular/platform-browser';
     MaterialModule,
     RouterModule,
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    OrderModule
   ],
   exports: [LeftSectionComponent]
 })
