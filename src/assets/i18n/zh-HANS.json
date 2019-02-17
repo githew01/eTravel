@@ -1,3 +1,14 @@
 {
-  "LANG": "繁體中文"
+  "LANG": "繁體中文",
+  "HOME_TITLE": "中美机票网 － 华人购买机票的首选网站",
+  "TOOL_BAR_TEXT": "海航、东航、国航可申请过夜中转酒店。",
+  "From_US": "美国始发机票",
+  "From_Canada": "加拿大始发机票",
+  "From_China": "中国始发机票",
+  "los-angeles-to-shanghai": "洛杉矶至上海特价机票",
+  "los-angeles-to-beijing": "洛杉矶至北京特价机票",
+  "los-angeles-to-chengdu": "洛杉矶至成都特价机票",
+  "los-angeles-to-qingdao": "洛杉矶至青岛特价机票",
+  "los-angeles-to-hangzhou": "洛杉矶至杭州特价机票",
+  "new-york-to-beijing": "纽约至北京特价机票"
 }

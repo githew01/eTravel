@@ -3,17 +3,21 @@
 @include media-breakpoint-up(sm) {
   .container {
     width: 100%;
+    height: 100vh;
   }
 }
 
 @include media-breakpoint-up(md) {
   .container {
     width: 100%;
+    height: 100vh;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .container {
+    width: 100%;
+    height: 100vh;
     max-width: 1240px;
     margin: 0 auto;
   }

@@ -1,3 +1,14 @@
 {
-  "LANG": "简体中文"
+  "LANG": "简体中文",
+  "HOME_TITLE": "中美機票網 － 華人購買機票的首選網站",
+  "TOOL_BAR_TEXT": "海航、東航、國航可申請過夜中轉酒店。",
+  "From_US": "美國始發機票",
+  "From_Canada": "加拿大始發機票",
+  "From_China": "中國始發機票",
+  "los-angeles-to-shanghai": "洛杉磯至上海特價機票",
+  "los-angeles-to-beijing": "洛杉磯至北京特價機票",
+  "los-angeles-to-chengdu": "洛杉磯至成都特價機票",
+  "los-angeles-to-qingdao": "洛杉磯至青島特價機票",
+  "los-angeles-to-hangzhou": "洛杉磯至杭州特價機票",
+  "new-york-to-beijing": "紐約至北京特價機票"
 }
