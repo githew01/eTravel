@@ -1,11 +1,12 @@
 {
-  "name": "e-travel",
+  "name": "etravel",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:mobile": "ng serve --host 192.168.1.112",
+    "start:mobile": "ng serve --host 192.168.1.108",
     "build": "ng build",
+    "build:prod": "ng build --prod --aot --build-optimizer=true --source-map=false --base-href=/etravel/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
