@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Config } from './core/config';
 import { Title } from '@angular/platform-browser';
@@ -10,8 +10,6 @@ import { ResponsiveService } from './services/responsive.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  screenWidth: number;
-
   constructor(
     private translate: TranslateService,
     config: Config,
@@ -26,13 +24,6 @@ export class AppComponent implements OnInit {
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.setTitile();
     });
-
-    // set screenWidth on page load
-    this.screenWidth = window.innerWidth;
-    window.onresize = () => {
-      // set screenWidth on screen size change
-      this.screenWidth = window.innerWidth;
-    };
   }
 
   setTitile() {
@@ -43,6 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.onResize();
     this.responsiveService.getMobileStatus().subscribe(isMobile => {
       if (isMobile) {
         console.log('Mobile device detected');
@@ -50,7 +42,6 @@ export class AppComponent implements OnInit {
         console.log('Desktop detected');
       }
     });
-    this.onResize();
   }
 
   onResize() {

@@ -1,0 +1,84 @@
+@import "app.import";
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.toolbar {
+  width: inherit !important;
+  background-color: #3f51b5;
+  //position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  //z-index: 2;
+  color: rgba(230, 26, 26, 0.884);
+  font-weight: 500;
+}
+
+.toggleButton {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+mat-drawer {
+  min-width: 290px;
+  background-color: #f0f0f5;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+@include media-breakpoint-up(xs) {
+  .nav-container {
+    height: calc(100vh - 128px);
+    opacity: 1;
+  }
+  .toolbar {
+    height: 48px;
+    span {
+      font-size: 0.75rem;
+    }
+    div.nopadding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .nav-container ::ng-deep .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .nav-container {
+    height: calc(100vh - 154px);
+  }
+  .toolbar {
+    height: 64px;
+    span {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-container {
+    height: calc(100vh - 164px);
+  }
+  .toolbar {
+    height: 64px;
+    span {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0;
+}
+
+.mat-list-item {
+  height: 2rem !important;
+}
