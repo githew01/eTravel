@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Config } from './core/config';
 import { Title } from '@angular/platform-browser';
@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.onResize();
     this.responsiveService.getMobileStatus().subscribe(isMobile => {
       if (isMobile) {
         console.log('Mobile device detected');
@@ -41,7 +42,6 @@ export class AppComponent implements OnInit {
         console.log('Desktop detected');
       }
     });
-    this.onResize();
   }
 
   onResize() {
